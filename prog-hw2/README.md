@@ -1,12 +1,22 @@
 PDP Homework #2: Matrix multiplication in MPI
 =============================================
-by B98705049 Ting-Yu Lu
 
-How to compile run the program
-------------------------------
-$ mpicc mat.mpi.c -o mat.mpi
+How to compile and run the program
+----------------------------------
 
-$ mpirun -n [num_of_procs] -hostfile hosts ./mat.mpi input11.dat 1 1  
-$ mpirun -n [num_of_procs] -hostfile hosts ./mat.mpi input22.dat 2 2  
-$ mpirun -n [num_of_procs] -hostfile hosts ./mat.mpi input32.dat 3 2  
-$ mpirun -n [num_of_procs] -hostfile hosts ./mat.mpi input42.dat 4 2  
+* Compile:
+
+        mpicc mat.mpi.c -o mat.mpi
+
+
+* Run:
+
+        mpirun -n [num_of_processors] ./mat.mpi input11.dat 1 1  
+        mpirun -n [num_of_processors] ./mat.mpi input22.dat 2 2  
+
+
+* Run with hostfile:
+
+        mpirun -n [num_of_processors] -hostfile hosts ./mat.mpi input11.dat 1 1  
+        mpirun -n [num_of_processors] -hostfile hosts ./mat.mpi input22.dat 2 2  
+
