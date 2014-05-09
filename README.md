@@ -1,4 +1,4 @@
 pdp-homework
 ============
 
-Programming homwork of Parallel and Distributed Programming course
+Parallel and Distributed Programming class @ NTU
